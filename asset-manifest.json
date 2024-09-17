@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.540dcd9e.css",
-    "main.js": "/static/js/main.0f9661b7.js",
+    "main.js": "/static/js/main.2bd04df6.js",
     "static/css/600.d6c820d2.chunk.css": "/static/css/600.d6c820d2.chunk.css",
     "static/js/600.f91a73d7.chunk.js": "/static/js/600.f91a73d7.chunk.js",
     "static/css/670.eb7f952f.chunk.css": "/static/css/670.eb7f952f.chunk.css",
@@ -52,7 +52,7 @@
     "static/css/910.ac4c8687.chunk.css": "/static/css/910.ac4c8687.chunk.css",
     "static/js/910.da6f6957.chunk.js": "/static/js/910.da6f6957.chunk.js",
     "static/css/462.553f9ec5.chunk.css": "/static/css/462.553f9ec5.chunk.css",
-    "static/js/462.9c5c34f6.chunk.js": "/static/js/462.9c5c34f6.chunk.js",
+    "static/js/462.221dd96b.chunk.js": "/static/js/462.221dd96b.chunk.js",
     "static/js/725.c4ef0d15.chunk.js": "/static/js/725.c4ef0d15.chunk.js",
     "static/js/135.4a7c719e.chunk.js": "/static/js/135.4a7c719e.chunk.js",
     "static/css/544.30a38c2f.chunk.css": "/static/css/544.30a38c2f.chunk.css",
@@ -64,11 +64,8 @@
     "static/js/249.03b46b86.chunk.js": "/static/js/249.03b46b86.chunk.js",
     "static/js/173.41ec72f5.chunk.js": "/static/js/173.41ec72f5.chunk.js",
     "static/js/53.d41e733c.chunk.js": "/static/js/53.d41e733c.chunk.js",
-    "static/media/bgmi.png": "/static/media/bgmi.09ba3c3874c2d357dcd4.png",
-    "static/media/freefire.png": "/static/media/freefire.415a79034574b7fb5ac3.png",
-    "static/media/poster24.png": "/static/media/poster24.102b4b61e43ab636c03e.png",
-    "static/media/ESPARDHA24.pdf": "/static/media/ESPARDHA24.cfcfc3ac4536ef872958.pdf",
     "static/media/valorent.png": "/static/media/valorent.da8be7981f5f534dc268.png",
+    "static/media/ESPARDHA24.pdf": "/static/media/ESPARDHA24.93d9bb19b26b42384282.pdf",
     "static/media/khokho.pdf": "/static/media/khokho.95e5cc749e127e833a29.pdf",
     "static/media/squash.pdf": "/static/media/squash.9476429cf03aa20f5329.pdf",
     "static/media/volleyball.pdf": "/static/media/volleyball.510cf5024508083cde58.pdf",
@@ -79,7 +76,10 @@
     "static/media/weightlifting.pdf": "/static/media/weightlifting.8b848d55edf942c19f53.pdf",
     "static/media/taekwondo.pdf": "/static/media/taekwondo.1411922ffcd0b05d513a.pdf",
     "static/media/IMG-20230924-WA0010.jpg": "/static/media/IMG-20230924-WA0010.d61bdb9573e9dd0271ad.jpg",
+    "static/media/poster24.png": "/static/media/poster24.9691757aa40031002fbf.png",
     "static/media/Helvetica Neue LTW0697BlkCnObl.ttf": "/static/media/Helvetica Neue LTW0697BlkCnObl.7999cc3419aa06b10394.ttf",
+    "static/media/freefire.png": "/static/media/freefire.ab3821de967de88909cf.png",
+    "static/media/bgmi.png": "/static/media/bgmi.ab60b87cc572d137ff2f.png",
     "static/media/404.jpg": "/static/media/404.f76542c74704c842f032.jpg",
     "static/media/boxing.pdf": "/static/media/boxing.fdcade5c643caa46fbb3.pdf",
     "static/media/kabbadi.pdf": "/static/media/kabbadi.5fa8a516df429c286f2d.pdf",
@@ -98,7 +98,7 @@
     "static/media/taekwondohover.png": "/static/media/taekwondohover.cf1a028bd24c62853604.png",
     "index.html": "/index.html",
     "main.540dcd9e.css.map": "/static/css/main.540dcd9e.css.map",
-    "main.0f9661b7.js.map": "/static/js/main.0f9661b7.js.map",
+    "main.2bd04df6.js.map": "/static/js/main.2bd04df6.js.map",
     "600.d6c820d2.chunk.css.map": "/static/css/600.d6c820d2.chunk.css.map",
     "600.f91a73d7.chunk.js.map": "/static/js/600.f91a73d7.chunk.js.map",
     "670.eb7f952f.chunk.css.map": "/static/css/670.eb7f952f.chunk.css.map",
@@ -149,7 +149,7 @@
     "910.ac4c8687.chunk.css.map": "/static/css/910.ac4c8687.chunk.css.map",
     "910.da6f6957.chunk.js.map": "/static/js/910.da6f6957.chunk.js.map",
     "462.553f9ec5.chunk.css.map": "/static/css/462.553f9ec5.chunk.css.map",
-    "462.9c5c34f6.chunk.js.map": "/static/js/462.9c5c34f6.chunk.js.map",
+    "462.221dd96b.chunk.js.map": "/static/js/462.221dd96b.chunk.js.map",
     "725.c4ef0d15.chunk.js.map": "/static/js/725.c4ef0d15.chunk.js.map",
     "135.4a7c719e.chunk.js.map": "/static/js/135.4a7c719e.chunk.js.map",
     "544.30a38c2f.chunk.css.map": "/static/css/544.30a38c2f.chunk.css.map",
@@ -164,6 +164,6 @@
   },
   "entrypoints": [
     "static/css/main.540dcd9e.css",
-    "static/js/main.0f9661b7.js"
+    "static/js/main.2bd04df6.js"
   ]
 }
