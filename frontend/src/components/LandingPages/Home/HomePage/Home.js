@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Mid from '../MiddleSection/MiddleSection';
+import CountdownTimer from '../Countdown/Countdown';
 import Bgimg from '../Images/newbg.jpg';
 // import Footer from '../Footer/Footer';
 
@@ -12,6 +13,7 @@ function App() {
         {/* Main Content Section */}
         <div className="main-content">
           <div>
+            
             <Mid />
           </div>
         </div>

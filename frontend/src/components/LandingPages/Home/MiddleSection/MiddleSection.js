@@ -1,38 +1,57 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import './MiddleSection.css';
+import { toast, ToastContainer } from "react-toastify";
 import { NavHashLink } from 'react-router-hash-link';
-import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Img from "../Images/spardha.png"
+import Img from "../Images/spardha.png";
 
 function Mid() {
-  // const [daysLeft, setDaysLeft] = useState(0);
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
-  // const showNotification = () => {
-  //   toast.error('Registrations closed!', {
-  //     position: toast.POSITION.TOP_CENTER,
-  //   });
-  // };
-  
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     const eventDate = new Date('2024-10-18');
-  //     const currentDate = new Date();
-  //     const timeDifference = eventDate - currentDate;
-  //     const days = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
-  //     setDaysLeft(days);
-  //   }, 1000);
+  const showNotification = () => {
+    toast.error('Registrations closed!', {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
 
-  //   return () => clearInterval(timer);
-  // }, []);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      // event date in IST explicitly (10 Oct 2025 00:00:00 IST)
+      const eventDate = new Date("2025-10-10T00:00:00+05:30");
+      const currentDate = new Date();
+
+      const timeDifference = eventDate - currentDate;
+
+      if (timeDifference <= 0) {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+        clearInterval(timer);
+        showNotification();
+        return;
+      }
+
+      const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
+      const seconds = Math.floor((timeDifference / 1000) % 60);
+
+      setTimeLeft({ days, hours, minutes, seconds });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="container-home">
       <div className="left-box">
         <div className="countdown-container">
-            <p className="days-text">WELCOME TO</p>
-            <div className='newimg'><img src={Img} alt='spardha-logo'/></div>
-            <p className='bold-text'>UNLEASHING  POTENTIAL</p>
+          <p className="days-text">WELCOME TO</p>
+          <div className="newimg"><img src={Img} alt="spardha-logo" /></div>
+          <p className="bold-text">UNLEASHING POTENTIAL</p>
+
+          {/* Countdown Display */}
+          <div className="countdown-display">
+            <p>{timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s left</p>
+          </div>
         </div>
 
         <div className="button-container">
@@ -41,13 +60,14 @@ function Mid() {
           </NavHashLink>
         </div>
       </div>
+
       <ToastContainer
         style={{
-          zIndex: '10', 
+          zIndex: '10',
           position: 'fixed',
-          top: '20%', 
-          left: '70%', 
-          transform: 'translate(-50%, -50%)', 
+          top: '20%',
+          left: '70%',
+          transform: 'translate(-50%, -50%)',
           width: 'fit-content',
         }}
       />
