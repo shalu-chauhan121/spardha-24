@@ -3,7 +3,7 @@ import './MiddleSection.css';
 import { toast, ToastContainer } from "react-toastify";
 import { NavHashLink } from 'react-router-hash-link';
 import 'react-toastify/dist/ReactToastify.css';
-import Img from "../Images/spardha.png";
+import Img from "../Images/spardha_logo_25.png";
 
 function Mid() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -49,16 +49,38 @@ function Mid() {
           <p className="bold-text">UNLEASHING POTENTIAL</p>
 
           {/* Countdown Display */}
-          <div className="countdown-display">
+          {/* <div className="countdown-display">
             <p>{timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s left</p>
+          </div> */}
+          
+        </div>
+        <div className="countdown">
+          <div className="time-card">
+            <div className="card-box"><span className="value">{String(timeLeft.days).padStart(2, '0')}</span></div>
+            <span className="label">Days</span>
+          </div>
+          <span className="time-divider">:</span>
+          <div className="time-card">
+            <div className="card-box"><span className="value">{String(timeLeft.hours).padStart(2, '0')}</span></div>
+            <span className="label">Hours</span>
+          </div>
+          <span className="time-divider">:</span>
+          <div className="time-card">
+            <div className="card-box"><span className="value">{String(timeLeft.minutes).padStart(2, '0')}</span></div>
+            <span className="label">Minutes</span>
+          </div>
+          <span className="time-divider">:</span>
+          <div className="time-card">
+            <div className="card-box"><span className="value">{String(timeLeft.seconds).padStart(2, '0')}</span></div>
+            <span className="label">Seconds</span>
           </div>
         </div>
 
-        <div className="button-container">
+        {/* <div className="button-container">
           <NavHashLink to="/matches">
             <button className="btn1">MATCHES</button>
           </NavHashLink>
-        </div>
+        </div> */}
       </div>
 
       <ToastContainer

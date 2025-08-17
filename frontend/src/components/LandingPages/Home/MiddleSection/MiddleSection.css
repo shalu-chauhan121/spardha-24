@@ -541,3 +541,80 @@ margin: 0px;
 padding-top: 70px;
 	}
 }
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.8vw;
+  margin: 1vw 0 0.5vw 0;
+}
+
+.time-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-card .card-box {
+  background: black;
+  border-radius: 16px;
+  min-width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.32rem;
+  box-shadow: 0 4px 22px 0 rgba(36, 18, 18, 0.17);
+}
+
+.time-card .value {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 3px;
+  font-family: 'Arial', 'Montserrat', 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.time-card .label {
+  font-size: 0.95rem;
+  color: #fff;
+  opacity: .95;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.time-divider {
+  font-size: 2.5rem;
+  font-weight: 750;
+  color: #fff;
+  margin: 0 0.19em 16px 0.19em;
+  user-select: none;
+  line-height: 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .countdown {
+    gap: 0.9vw;
+  }
+  .time-card .card-box {
+    min-width: 44px;
+    height: 44px;
+    border-radius: 8px;
+  }
+  .time-card .value {
+    font-size: 1.32rem;
+  }
+  .time-divider {
+    font-size: 1.38rem;
+    margin-bottom: 9px;
+  }
+  .time-card .label {
+    font-size: 0.52rem;
+  }
+}
