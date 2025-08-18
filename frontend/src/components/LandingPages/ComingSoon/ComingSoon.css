@@ -1,3 +1,9 @@
+  /* * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
 .coming-soon{
     position: relative;
     height: 100vh;
@@ -65,4 +71,243 @@
         opacity:1;
         transform:translateY(0);
     }
+}
+
+.contact-no p{
+    margin:0;
+} 
+ */
+
+  
+ .coming-soon {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.bg-img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+
+.content {
+  z-index: 2;
+  position: absolute;
+  top: 35vh;      /* start at 65% of viewport height */
+  bottom: 0;      /* stretch down to bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;     /* responsive width */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* content flows downward naturally */
+  gap: 10px;      /* spacing between elements */
+}
+
+/* Dumbbell */
+.dumbbell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  position:relative;
+  
+}
+
+/* Plates */
+.plate {
+  background: white;
+  border-radius:0 4px;
+  margin: 0 4px;
+  opacity: 0;
+  transform: translateX(0);
+  animation-fill-mode: forwards;
+}
+
+.plate.big {
+  width: 25px;
+  height: 120px;
+  animation: slide-in 0.6s ease forwards;
+}
+.plate.medium {
+  width: 20px;
+  height: 100px;
+  animation: slide-in 0.6s ease forwards 0.2s;
+}
+.plate.small {
+  width: 15px;
+  height: 80px;
+  animation: slide-in 0.6s ease forwards 0.4s;
+}
+
+.stopper {
+  width: 14px;
+  height: 60vw;
+  background: white;
+  margin: 0 6px;
+  opacity: 0;
+  transform: scaleY(0);
+  animation: growStopper 0.8s forwards;
+  animation-delay: 0.7s;
+
+}
+.stopper-left{
+     position:absolute;
+     left:30%;
+     top:60px;
+}
+.stopper-right{
+     position:absolute;
+     right:30%;
+     top:60px;
+     bottom:0;
+}
+.stopper:first-of-type {
+  animation-delay: 0.7s;
+}
+.stopper:last-of-type {
+  animation-delay: 1.2s;
+}
+
+
+/* Bar */
+.bar {
+  width: 15vw;
+  height: 14px;
+  background: white;
+  opacity: 0;
+  animation: grow-bar 0.6s ease forwards 0.6s;
+}
+
+.left-bar { transform-origin: right center; }
+.right-bar { transform-origin: left center; }
+
+/* Center circle with logo */
+.center-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: black;
+  border: 4px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  opacity: 0;
+  transform: scale(0);
+  animation: pop-in 0.6s ease forwards 1s;
+}
+
+.center-circle img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Headings */
+h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-up 0.6s ease forwards 1.4s;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-up 0.6s ease forwards 1.6s;
+}
+
+/* Animations */
+@keyframes slide-in {
+  from { opacity: 0; transform: translateX(-50px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes grow-bar {
+  from { opacity: 0; transform: scaleX(0); }
+  to   { opacity: 1; transform: scaleX(1); }
+}
+
+@keyframes pop-in {
+  from { opacity: 0; transform: scale(0); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+@keyframes growStopper {
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@media (max-width:400px){
+    .dumbbell {display:none;}
+}
+/* Responsive adjustments */
+
+@media (max-width: 1024px) {
+  .content {
+    top: 60vh;   /* slightly higher on tablets */
+    bottom: 0;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .content {
+    top: 32vh;   /* higher on smaller screens */
+    bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    top: 30vh;   /* higher on smaller screens */
+    bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    top: 28vh;   /* adjust for very small screens */
+    bottom: 0;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
 }

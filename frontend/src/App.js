@@ -10,6 +10,7 @@ import NotFound from './components/LandingPages/NotFound/NotFound';
 // import { Carousel } from 'react-responsive-carousel';
 import ShowTable from './components/LandingPages/UserData/ShowTable';
 import ShowallTable from './components/LandingPages/UserData/ShowallTable';
+import ComingSoon from './components/LandingPages/ComingSoon/ComingSoon.js';
 // import { AllGameFixtures } from './components/LandingPages/UserData/AllGameFixtures';
 
 const LandingPages = React.lazy(() =>
@@ -195,7 +196,8 @@ function App() {
             path="espardha"
             element={
               <Suspense fallback={<Preloader />}>
-                <Espardha />
+                {/* <Espardha /> */}
+                <ComingSoon/>
                 <Footer />
               </Suspense>
             }
@@ -342,7 +344,8 @@ function App() {
             path="registration"
             element={
               <Suspense fallback={<Spinner />}>
-                <Registration />
+                <ComingSoon/>
+                {/* <Registration /> */}
               </Suspense>
             }
           />
