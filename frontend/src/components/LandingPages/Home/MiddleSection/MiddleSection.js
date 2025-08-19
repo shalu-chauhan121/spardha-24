@@ -53,8 +53,9 @@ function Mid() {
             <p>{timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s left</p>
           </div> */}
           
+           
         </div>
-        <div className="countdown">
+         <div className="countdown">
           <div className="time-card">
             <div className="card-box"><span className="value">{String(timeLeft.days).padStart(2, '0')}</span></div>
             <span className="label">Days</span>
@@ -74,7 +75,7 @@ function Mid() {
             <div className="card-box"><span className="value">{String(timeLeft.seconds).padStart(2, '0')}</span></div>
             <span className="label">Seconds</span>
           </div>
-        </div>
+         </div>
 
         {/* <div className="button-container">
           <NavHashLink to="/matches">

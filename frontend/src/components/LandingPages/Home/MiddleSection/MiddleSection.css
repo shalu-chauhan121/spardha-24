@@ -597,7 +597,7 @@ padding-top: 70px;
   line-height: 2;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments
 @media (max-width: 768px) {
   .countdown {
     gap: 0.9vw;
@@ -617,4 +617,49 @@ padding-top: 70px;
   .time-card .label {
     font-size: 0.52rem;
   }
-}
+} */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container-home {
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding-top: 0;
+    align-items: flex-start;
+  }
+
+  .left-box {
+    height: 100%;
+    overflow-y: visible;
+    padding: 0 7px;
+  }
+
+  .countdown {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 0.9vw;
+    margin-top: 0;
+  }
+
+  .time-card .card-box {
+    min-width: 44px;
+    height: 44px;
+    border-radius: 8px;
+  }
+
+  .time-card .value {
+    font-size: 1.32rem;
+  }
+
+  .time-divider {
+    font-size: 1.38rem;
+    margin-bottom: 9px;
+  }
+
+  .time-card .label {
+    font-size: 0.52rem;
+  }
+} /* Add this closing brace */
+
