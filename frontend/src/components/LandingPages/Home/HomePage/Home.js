@@ -8,7 +8,7 @@ import ComingSoon from '../../ComingSoon/ComingSoon';
 function App() {
   return (
     <>
-      <div className="sctn">
+ <div className="sctn">
         <div className="bg-home" style={{ backgroundImage: `url(${Bgimg})` }}></div>
         {/* Main Content Section */}
         <div className="main-content">
@@ -17,9 +17,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div>{/*<Footer /> */}</div> 
+      <div>{/*<Footer /> */}</div>
 
-      {/* <ComingSoon/> */}
     </>
   );
 }
