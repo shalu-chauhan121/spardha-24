@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './MiddleSection.css';
 import { toast, ToastContainer } from "react-toastify";
-import { NavHashLink } from 'react-router-hash-link';
+// import { NavHashLink } from 'react-router-hash-link';
 import 'react-toastify/dist/ReactToastify.css';
 import Img from "../Images/spardha_logo_25.png";
 

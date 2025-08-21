@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Mid from '../MiddleSection/MiddleSection';
-import CountdownTimer from '../Countdown/Countdown';
+// import CountdownTimer from '../Countdown/Countdown';
 import Bgimg from '../Images/newbg.jpg';
 // import Footer from '../Footer/Footer';
 
