@@ -40,9 +40,9 @@ const Guests = React.lazy(() =>
 const Register = React.lazy(() =>
   import('./components/LandingPages/Register/Register')
 );
-const Signup = React.lazy(() =>
-  import('./components/LandingPages/Register/Signup/Signup')
-);
+// const Signup = React.lazy(() =>
+//   import('./components/LandingPages/Register/Signup/Signup')
+// );
 const Login = React.lazy(() =>
   import('./components/LandingPages/Register/Login/Login')
 );
@@ -84,9 +84,9 @@ const Footer1 = React.lazy(() =>
 const Matches = React.lazy(() =>
   import('./components/LandingPages/matches/matches')
 );
-const Espardha = React.lazy(() =>
-  import('./components/LandingPages/Espardha/Espardha')
-);
+// const Espardha = React.lazy(() =>
+//   import('./components/LandingPages/Espardha/Espardha')
+// );
 
 function usePageViews() {
   let location = useLocation();
