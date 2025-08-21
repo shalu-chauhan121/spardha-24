@@ -2,7 +2,6 @@ import React from 'react';
 import './Home.css';
 import Mid from '../MiddleSection/MiddleSection';
 import Bgimg from '../Images/newbg.jpg';
-import ComingSoon from '../../ComingSoon/ComingSoon';
 // import Footer from '../Footer/Footer';
 
 function App() {

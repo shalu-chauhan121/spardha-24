@@ -142,7 +142,8 @@ function App() {
               path="signup"
               element={
                 <Suspense fallback={<Preloader />}>
-                  <Signup />
+                  {/* <Signup /> */}
+                  <ComingSoon/>
                 </Suspense>
               }
             />
@@ -344,8 +345,7 @@ function App() {
             path="registration"
             element={
               <Suspense fallback={<Spinner />}>
-                <ComingSoon/>
-                {/* <Registration /> */}
+              <Registration />
               </Suspense>
             }
           />
