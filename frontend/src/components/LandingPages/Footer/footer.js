@@ -71,7 +71,7 @@ const footer = () => {
           </div>
         </div>
       </div>
-      <h5 className={`${css.bottom}`}>Spardha, IIT BHU ©2024. All Rights Reserved.</h5>
+      <h5 className={`${css.bottom}`}>Spardha, IIT BHU ©2025. All Rights Reserved.</h5>
     </div>
   )
 }
