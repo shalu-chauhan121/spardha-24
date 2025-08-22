@@ -48,7 +48,7 @@ const footer = () => {
               <h2 className={`${css.bluetext} ${css.gaping}`}> Contact Us</h2>
               <div className={`${css.contacts}`}>
               <h4 className={`${css.convener}`}> Convener</h4>
-              <p>Sarthak Gupta</p>
+              <p>Devang Darpe</p>
               <p className={`${css.convenermail}`}>convener.spardha@itbhu.ac.in</p>
               <h4 className={`${css.convener}`}> Collaboration</h4>
               <p className={`${css.convenermail}`}>marketing.spardha@itbhu.ac.in</p>
