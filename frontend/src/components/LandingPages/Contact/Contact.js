@@ -32,7 +32,8 @@ const Contact = () => {
 
         <Card mainImage='/images/Contact/cimages/Co-convenor21.jpg' name="Suraj Kumar" position="Co-convener" email="suraj.kumar.min22@itbhu.ac.in" isConvener={true} linkedin="https://www.linkedin.com/in/suraj-kumar-3578a1258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" insta="https://www.instagram.com/kr_srj23?utm_source=qr&igsh=YXBwNWN0aTlxcHkz"/>
 
-        
+        <Card mainImage='/images/Contact/cimages/Co-convenor22.jpg' name="Aditya Amarnath" position="Co-convener" email="aditya.amarnath.cer22@itbhu.ac.in" isConvener={true} linkedin="https://www.linkedin.com/in/aditya-amarnath-82663a22b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" insta="https://www.instagram.com/aditya_amarnath18/"/>
+   
         
 
         </>;
