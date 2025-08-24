@@ -122,9 +122,6 @@ hr {
 .hover-box button.copied{
     background-color: rgba(73, 130, 246, 1);
 }
-@media (max-width: 1024px){
-   
-}
   
 @media (max-width: 768px){
     .Image img {
