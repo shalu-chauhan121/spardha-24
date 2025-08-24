@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './footer.module.css';
 import { Link } from 'react-router-dom'
-import img from './images/spardha_logo_25.png'
+import img from './images/spardhalogo.png'
 import location from './images/location.svg'
 import mail from './images/mail.svg'
 import website from './images/website.svg'

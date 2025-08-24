@@ -7,8 +7,9 @@
 
 body {
   height: 100vh;
-  /* width: 100vw; */
+  /*width: 100vw;*/
   font-family: 'Poppins', sans-serif;
+  
 }
 .container-home {
   padding-top: 5vh;
@@ -64,7 +65,7 @@ body {
 
 .days-text {
   padding-top: 80px;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
@@ -89,7 +90,8 @@ body {
   justify-content: center;
 }
 .newimg img{
-  width: 30rem;
+  width: 32rem;
+
 }
 .button-container {
   display: flex;
@@ -559,8 +561,8 @@ padding-top: 70px;
 .time-card .card-box {
   background: black;
   border-radius: 16px;
-  min-width: 72px;
-  height: 72px;
+  min-width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -569,7 +571,7 @@ padding-top: 70px;
 }
 
 .time-card .value {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
   letter-spacing: 3px;
@@ -578,7 +580,7 @@ padding-top: 70px;
 }
 
 .time-card .label {
-  font-size: 0.95rem;
+  font-size: 0.90rem;
   color: #fff;
   opacity: .95;
   font-weight: 600;
@@ -589,12 +591,12 @@ padding-top: 70px;
 }
 
 .time-divider {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 750;
   color: #fff;
   margin: 0 0.19em 16px 0.19em;
   user-select: none;
-  line-height: 2;
+  line-height: 2.5;
 }
 
 /* Responsive adjustments
@@ -620,7 +622,7 @@ padding-top: 70px;
 } */
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .container-home {
     min-height: 100vh;
     max-height: 100vh;
@@ -661,5 +663,144 @@ padding-top: 70px;
   .time-card .label {
     font-size: 0.52rem;
   }
-} /* Add this closing brace */
+  body{
+    padding-top: 60px;
+    margin: 0;
+    background-color: #000;
+  }
+  .newimg
+  {
+   
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+} 
+ */
+@media (max-width: 768px) {
+  
+
+  .container-home {
+    min-height: 100vh;
+    max-height: none;
+    overflow-y: auto;
+    padding-top: 0;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .left-box {
+    width: 100vw;
+    height: auto;
+    overflow-y: visible;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .newimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .newimg img {
+    width: 80vw; /* Responsive image width */
+    max-width: 280px;
+    min-width: 120px;
+    height: auto;
+  }
+
+  .bold-text {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.4rem;
+    word-break: break-word;
+    -webkit-text-stroke: 2px #fff;
+    margin-bottom: 16px;
+  }
+
+  .days-text {
+    padding-top: 24px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .count {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .time-card .card-box {
+    background: #111;
+    border-radius: 10px;
+    min-width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.14);
+  }
+
+  .time-card .value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+  .time-card .label {
+    font-size: 0.60rem;
+    color: #fff;
+    opacity: .96;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-top: 0;
+    text-align: center;
+  }
+  .time-divider {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 2px;
+    font-weight: bold;
+    user-select: none;
+    line-height: 3;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin: 20px 0 15px 0;
+    align-items: center;
+  }
+
+  .btn1, .btn2 {
+    font-size: 1.1rem;
+    width: 90vw;
+    max-width: 250px;
+    min-width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 7px 0;
+    text-align: center;
+  }
+}
+
+/* For even smaller screens (optional refinement) */
+@media (max-width: 426px) {
+  .btn1, .btn2 {
+    font-size: 0.98rem;
+    width: 92vw;
+    height: 38px;
+  }
+}
 
