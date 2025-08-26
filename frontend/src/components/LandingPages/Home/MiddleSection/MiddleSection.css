@@ -7,8 +7,9 @@
 
 body {
   height: 100vh;
-  /* width: 100vw; */
+  /*width: 100vw;*/
   font-family: 'Poppins', sans-serif;
+  
 }
 .container-home {
   padding-top: 5vh;
@@ -64,7 +65,7 @@ body {
 
 .days-text {
   padding-top: 80px;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
@@ -89,7 +90,8 @@ body {
   justify-content: center;
 }
 .newimg img{
-  width: 30rem;
+  width: 32rem;
+
 }
 .button-container {
   display: flex;
@@ -300,7 +302,7 @@ body {
     width: 12rem;
   }
 }
-/* .card {
+.card {
 	height: 28vh;
 width: 176px;
 	border: none;
@@ -338,8 +340,8 @@ width: 176px;
 	font-weight: 600;
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-} */
-/* @media (max-width:1530px) and (min-width:950px){
+} 
+ @media (max-width:1530px) and (min-width:950px){
 	.heading1 {
 		font-size: 5.7vw;
 	
@@ -540,4 +542,265 @@ padding-top: 127px;
 margin: 0px;
 padding-top: 70px;
 	}
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.8vw;
+  margin: 1vw 0 0.5vw 0;
+}
+
+.time-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-card .card-box {
+  background: black;
+  border-radius: 16px;
+  min-width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.32rem;
+  box-shadow: 0 4px 22px 0 rgba(36, 18, 18, 0.17);
+}
+
+.time-card .value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 3px;
+  font-family: 'Arial', 'Montserrat', 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.time-card .label {
+  font-size: 0.90rem;
+  color: #fff;
+  opacity: .95;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.time-divider {
+  font-size: 2.3rem;
+  font-weight: 750;
+  color: #fff;
+  margin: 0 0.19em 16px 0.19em;
+  user-select: none;
+  line-height: 2.5;
+}
+
+/* Responsive adjustments
+@media (max-width: 768px) {
+  .countdown {
+    gap: 0.9vw;
+  }
+  .time-card .card-box {
+    min-width: 44px;
+    height: 44px;
+    border-radius: 8px;
+  }
+  .time-card .value {
+    font-size: 1.32rem;
+  }
+  .time-divider {
+    font-size: 1.38rem;
+    margin-bottom: 9px;
+  }
+  .time-card .label {
+    font-size: 0.52rem;
+  }
 } */
+
+/* Responsive adjustments */
+/* @media (max-width: 768px) {
+  .container-home {
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding-top: 0;
+    align-items: flex-start;
+  }
+
+  .left-box {
+    height: 100%;
+    overflow-y: visible;
+    padding: 0 7px;
+  }
+
+  .countdown {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 0.9vw;
+    margin-top: 0;
+  }
+
+  .time-card .card-box {
+    min-width: 44px;
+    height: 44px;
+    border-radius: 8px;
+  }
+
+  .time-card .value {
+    font-size: 1.32rem;
+  }
+
+  .time-divider {
+    font-size: 1.38rem;
+    margin-bottom: 9px;
+  }
+
+  .time-card .label {
+    font-size: 0.52rem;
+  }
+  body{
+    padding-top: 60px;
+    margin: 0;
+    background-color: #000;
+  }
+  .newimg
+  {
+   
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+} 
+ */
+@media (max-width: 768px) {
+  
+
+  .container-home {
+    min-height: 100vh;
+    max-height: none;
+    overflow-y: auto;
+    padding-top: 0;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .left-box {
+    width: 100vw;
+    height: auto;
+    overflow-y: visible;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .newimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .newimg img {
+    width: 80vw; /* Responsive image width */
+    max-width: 280px;
+    min-width: 120px;
+    height: auto;
+  }
+
+  .bold-text {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.4rem;
+    word-break: break-word;
+    -webkit-text-stroke: 2px #fff;
+    margin-bottom: 16px;
+  }
+
+  .days-text {
+    padding-top: 24px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .count {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .time-card .card-box {
+    background: #111;
+    border-radius: 10px;
+    min-width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.14);
+  }
+
+  .time-card .value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+  .time-card .label {
+    font-size: 0.60rem;
+    color: #fff;
+    opacity: .96;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-top: 0;
+    text-align: center;
+  }
+  .time-divider {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 2px;
+    font-weight: bold;
+    user-select: none;
+    line-height: 3;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin: 20px 0 15px 0;
+    align-items: center;
+  }
+
+  .btn1, .btn2 {
+    font-size: 1.1rem;
+    width: 90vw;
+    max-width: 250px;
+    min-width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 7px 0;
+    text-align: center;
+  }
+}
+
+/* For even smaller screens (optional refinement) */
+@media (max-width: 426px) {
+  .btn1, .btn2 {
+    font-size: 0.98rem;
+    width: 92vw;
+    height: 38px;
+  }
+}
+

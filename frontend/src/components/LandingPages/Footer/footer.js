@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './footer.module.css';
 import { Link } from 'react-router-dom'
-import img from './images/image.png'
+import img from './images/spardhalogo.png'
 import location from './images/location.svg'
 import mail from './images/mail.svg'
 import website from './images/website.svg'
@@ -14,7 +14,7 @@ const footer = () => {
     <div className={`${css.maindiv}`}>
       <div className={`${css.container}`}>
         <div className={`${css.address}`}>
-          <img src={img} className={`${css.logoimg}`} alt='Spardha 2024 with iitbhu logo'></img>
+          <img src={img} className={`${css.logoimg}`} alt='Spardha 2025with iitbhu logo'></img>
           <div className={`${css.mail}`}>
             <div className={`${css.innerparts}`}>
               <img src={location} alt='Location svg' className={`${css.bluetext}`}></img>

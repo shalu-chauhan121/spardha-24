@@ -59,9 +59,7 @@ function Header() {
             <NavbarBrand>
               <NavHashLink exact="true" to="/" smooth>
                 <img
-                  src={`/images/logo/spardha-logo-${
-                    navbar ? (isMobile ? 'white' : 'white') : 'white'
-                  }.png`}
+                  src={`/images/logo/white logo.png`}
                   alt="Spardha Logo"
                   height="70px"
                   // style={{ marginLeft: '2px' }}
