@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './footer.module.css';
 import { Link } from 'react-router-dom'
-import img from './images/image.png'
+import img from './images/spardhalogo.png'
 import location from './images/location.svg'
 import mail from './images/mail.svg'
 import website from './images/website.svg'
@@ -14,7 +14,7 @@ const footer = () => {
     <div className={`${css.maindiv}`}>
       <div className={`${css.container}`}>
         <div className={`${css.address}`}>
-          <img src={img} className={`${css.logoimg}`} alt='Spardha 2024 with iitbhu logo'></img>
+          <img src={img} className={`${css.logoimg}`} alt='Spardha 2025with iitbhu logo'></img>
           <div className={`${css.mail}`}>
             <div className={`${css.innerparts}`}>
               <img src={location} alt='Location svg' className={`${css.bluetext}`}></img>
@@ -48,7 +48,7 @@ const footer = () => {
               <h2 className={`${css.bluetext} ${css.gaping}`}> Contact Us</h2>
               <div className={`${css.contacts}`}>
               <h4 className={`${css.convener}`}> Convener</h4>
-              <p>Sarthak Gupta</p>
+              <p>Devang Darpe</p>
               <p className={`${css.convenermail}`}>convener.spardha@itbhu.ac.in</p>
               <h4 className={`${css.convener}`}> Collaboration</h4>
               <p className={`${css.convenermail}`}>marketing.spardha@itbhu.ac.in</p>
@@ -71,7 +71,7 @@ const footer = () => {
           </div>
         </div>
       </div>
-      <h5 className={`${css.bottom}`}>Spardha, IIT BHU ©2024. All Rights Reserved.</h5>
+      <h5 className={`${css.bottom}`}>Spardha, IIT BHU ©2025. All Rights Reserved.</h5>
     </div>
   )
 }

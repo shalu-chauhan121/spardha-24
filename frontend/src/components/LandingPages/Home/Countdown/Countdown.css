@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Pacifico&family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Pacifico&family=Poppins&display=swap');
 
 .countdowntimer {
     display: flex;
@@ -164,6 +164,144 @@
 }
 @media(max-width:300px){
     .countdowntimer{
+        scale: 50%;
+    }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Pacifico&family=Poppins&display=swap');
+
+.countdowntimer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2vh;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.days, .hours, .minutes, .seconds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colon {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0.5vw;
+    position: relative;
+    top: -1vh;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5vh;
+}
+
+.time div {
+    background-color: #fff;
+    color: #222;
+    width: 70px;
+    height: 70px;
+    margin: 0 5px;
+    border-radius: 12px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    letter-spacing: 2px;
+}
+
+.value {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0.5vh;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 950px) {
+    .countdowntimer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.7);
+        padding: 1vh 0;
+        z-index: 100;
+    }
+    .countdown {
+        gap: 1vw;
+    }
+    .time div {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        margin: 0 3px;
+    }
+    .colon {
+        font-size: 2.5rem;
+        top: -0.5vh;
+    }
+    .value {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .countdowntimer {
+        scale: 80%;
+    }
+    .time div {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+    .colon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .countdowntimer {
+        scale: 70%;
+    }
+    .time div {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    .colon {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .countdowntimer {
+        scale: 65%;
+    }
+}
+
+@media (max-width: 360px) {
+    .countdowntimer {
+        scale: 60%;
+    }
+}
+
+@media (max-width: 300px) {
+    .countdowntimer {
         scale: 50%;
     }
 }
