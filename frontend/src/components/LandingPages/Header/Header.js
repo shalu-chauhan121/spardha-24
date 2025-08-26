@@ -59,7 +59,7 @@ function Header() {
             <NavbarBrand>
               <NavHashLink exact="true" to="/" smooth>
                 <img
-                  src={`/images/logo/white logo.png`}
+                  src={`/images/logo/white_logo_25.png`}
                   alt="Spardha Logo"
                   height="70px"
                   // style={{ marginLeft: '2px' }}
@@ -792,7 +792,7 @@ function Header() {
                       }}
                     ></div>
                     <img
-                      src="/images/logo/spardha24.png"
+                      src="/static/media/spardhalogo.28d0e420e38f3f517ab3.png"
                       alt="spardha-logo"
                       className="image"
                     />
