@@ -140,7 +140,8 @@ SWAGGER_SETTINGS = {
         'api_key': {
             'type': 'apiKey',
             'in': 'header',
-            'name': 'Authorization'
+            'name': 'Authorization',
+            "description": "Format: Token your_token"
         }
     },
 }
