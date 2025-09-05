@@ -3,6 +3,7 @@ import './Home.css';
 import Mid from '../MiddleSection/MiddleSection';
 // import CountdownTimer from '../Countdown/Countdown';
 import Bgimg from '../Images/newbg.jpg';
+import Contact from '../Contact/Contact';
 // import Footer from '../Footer/Footer';
 
 function App() {
@@ -16,9 +17,10 @@ function App() {
             
             <Mid />
           </div>
+            <Contact />
         </div>
       </div>
-      <div>{/*<Footer /> */}</div>
+      <div></div>
 
     </>
   );

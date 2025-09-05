@@ -3,7 +3,6 @@ import './MiddleSection.css';
 import { toast, ToastContainer } from "react-toastify";
 // import { NavHashLink } from 'react-router-hash-link';
 import 'react-toastify/dist/ReactToastify.css';
-import Img from "../Images/spardhalogo.png";
 
 function Mid() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -45,7 +44,7 @@ function Mid() {
       <div className="left-box">
         <div className="countdown-container">
           <p className="days-text">WELCOME TO</p>
-          <div className="newimg"><img src={Img} alt="spardha-logo" /></div>
+          <div className="newimg"><img src="/images/logo/spardhalogo.png" alt="spardha-logo" /></div>
           <p className="bold-text">UNLEASHING POTENTIAL</p>
 
           {/* Countdown Display */}

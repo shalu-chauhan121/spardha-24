@@ -40,9 +40,9 @@ const Guests = React.lazy(() =>
 const Register = React.lazy(() =>
   import('./components/LandingPages/Register/Register')
 );
-// const Signup = React.lazy(() =>
-//   import('./components/LandingPages/Register/Signup/Signup')
-// );
+const Signup = React.lazy(() =>
+  import('./components/LandingPages/Register/Signup/Signup')
+);
 const Login = React.lazy(() =>
   import('./components/LandingPages/Register/Login/Login')
 );
@@ -142,8 +142,8 @@ function App() {
               path="signup"
               element={
                 <Suspense fallback={<Preloader />}>
-                  {/* <Signup /> */}
-                  <ComingSoon/>
+                  <Signup />
+                  {/* <ComingSoon/> */}
                 </Suspense>
               }
             />
