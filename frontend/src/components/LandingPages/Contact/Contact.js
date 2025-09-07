@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Contact.css';
-import Carousel from '../Home/Carousel/Carouselhp';
+// import Carousel from '../Home/Carousel/Carouselhp';
 import Card from './Card/Card';
 
 const Contact = () => {
@@ -67,7 +67,7 @@ const Contact = () => {
   return (
     <>
       <section id='contactus'>
-        <Carousel />
+        {/* <Carousel /> */}
         <div className='container'>
           <div className='heading123'>
             <h2>Contact Us</h2>

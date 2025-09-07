@@ -1,0 +1,202 @@
+/* Base styles */
+.about {
+  margin: 1rem auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+/* ---------- Top Section ---------- */
+.topSection {
+  max-width: 90vw;
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  min-width: 120px;
+}
+
+.textContent {
+  flex: 1;
+  min-width: 220px;
+}
+
+.boldText {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.subTitle {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.normalText {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+/* ---------- Bottom Section ---------- */
+.bottomSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageBox {
+  position: relative;
+  width: 90vw;
+  max-width:95vw;
+  height: 50vh;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  max-width: 60vw;
+}
+
+.image_data {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 2rem;
+}
+
+.statsBox {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 180px;
+  background: #f4e38f;
+  border-radius: 20px;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 3;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  opacity: 0.97;
+}
+
+.statsBox h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.statsBox p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ---------- Responsive Styles ---------- */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .topSection {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .imageBox {
+    height: 40vh;
+  }
+  .imageOverlay {
+    font-size: 2rem;
+    max-width: 80vw;
+  }
+  .statsBox {
+    width: 140px;
+    padding: 0.7rem 0.3rem;
+    top: 5%;
+    right: 2%;
+  }
+  .statsBox h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .about {
+    margin: 2rem auto;
+    padding: 1rem 0.5rem;
+    border-radius: 12px;
+  }
+  .topSection {
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 98vw;
+  }
+  .title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .textContent {
+    font-size: 0.95rem;
+  }
+  .imageBox {
+    width: 98vw;
+    height: 220px;
+    border-radius: 12px;
+  }
+  .image {
+    border-radius: 12px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .imageOverlay {
+    font-size: 1.1rem;
+    top: 5%;
+    left: 3%;
+    max-width: 90vw;
+  }
+  .statsBox {
+    width: 90px;
+    padding: 0.4rem 0.1rem;
+    top: 5%;
+    right: 2%;
+    border-radius: 10px;
+  }
+  .statsBox h2 {
+    font-size: 0.9rem;
+  }
+  .statsBox p {
+    font-size: 0.7rem;
+  }
+}

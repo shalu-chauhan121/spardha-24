@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Contact.module.css";
 
-const Contact = () => {
+const Home_Contact = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -24,11 +24,11 @@ const Contact = () => {
 
         {/* Right Section */}
         <div className={styles.right}>
-          <img src="../public/image/worldmap.jpg" alt="World Map" className={styles.map} />
+          <img src="/images/general/image.png" alt="World Map" className={styles.map} />
         </div>
       </div>
     </div>
   );
 };
 
-export default Contact;
+export default Home_Contact;

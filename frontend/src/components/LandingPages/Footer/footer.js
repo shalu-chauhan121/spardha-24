@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import css from './footer.module.css';
 import { Link } from 'react-router-dom';
 import insta from './images/insta.svg';
@@ -6,18 +5,6 @@ import facebook from './images/facebook.svg';
 import linkedin from './images/linkedin.svg';
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    if (email) {
-      setSubscribed(true);
-      setEmail('');
-      setTimeout(() => setSubscribed(false), 3000);
-    }
-  };
-
   return (
     <footer className={css['footer-premium']}>
       <div className={css['footer-main-content']}>
