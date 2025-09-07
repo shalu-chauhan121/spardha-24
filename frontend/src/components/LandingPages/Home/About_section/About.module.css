@@ -27,6 +27,7 @@
 .textContent {
   flex: 1;
   min-width: 220px;
+  text-align: center;
 }
 
 .boldText {
