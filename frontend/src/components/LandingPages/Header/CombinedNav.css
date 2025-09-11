@@ -1,4 +1,4 @@
-/* NAVBAR */
+
 .navbar ul {
   display: flex;
   gap: 1.25rem;
@@ -67,7 +67,10 @@
   display: block;
   padding: 10px 0;
 }
-
+.logo{
+  height:40px;
+  width:auto;
+}
 /* AUTH BUTTONS */
 .auth-buttons {
   display: flex;

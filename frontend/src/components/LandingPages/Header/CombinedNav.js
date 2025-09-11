@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import './CombinedNav.css';
 
-// NAVBAR COMPONENT
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About Us', path: '/about' },
@@ -11,37 +11,40 @@ const navLinks = [
   { name: 'Contact Us', path: '/contactus' },
 ];
 
-export const Navbar = ({ onHamburgerClick }) => (
-  <div className="top-bar">
-    <img src="/images/logo/white_logo_25.png" alt="Spardha Logo" className="logo" />
+export const Navbar = ({ onHamburgerClick }) => {
 
-    <nav className="navbar">
-      <ul>
-        {navLinks.map((link) => (
-          <li key={link.path}>
-            <Link to={link.path}>{link.name}</Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+  return (
+    <div className="top-bar">
+      <img src="/images/logo/white_logo_25.png" alt="Spardha Logo" className="logo" />
 
-    <div className="auth-buttons">
-      <Link to="/signup">
-        <button className="signup-btn">Sign Up</button>
-      </Link>
-      <Link to="/login">
-        <button className="login-btn">Login</button>
-      </Link>
+      <nav className="navbar">
+        <ul>
+          {navLinks.map((link) => (
+            <li key={link.path}>
+              <Link to={link.path}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <div className="auth-buttons">
+        <Link to="/register/signup">
+          <button className="signup-btn">Sign Up</button>
+        </Link>
+        <Link to="/register/login">
+          <button className="login-btn">Login</button>
+        </Link>
+      </div>
+
+      <div className="hamburger-btn" onClick={onHamburgerClick}>
+        <FaBars size={28} color="white" />
+      </div>
     </div>
+  );
+};
 
-    <div className="hamburger-btn" onClick={onHamburgerClick}>
-      <FaBars size={28} color="white" />
-    </div>
-  </div>
-);
-
-// SIDEBAR COMPONENT
 export const Sidebar = ({ isOpen, onClose }) => {
+
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add('no-scroll');
@@ -50,6 +53,7 @@ export const Sidebar = ({ isOpen, onClose }) => {
     }
     return () => document.body.classList.remove('no-scroll');
   }, [isOpen]);
+
 
   return (
     <>
@@ -66,8 +70,8 @@ export const Sidebar = ({ isOpen, onClose }) => {
           ))}
         </ul>
         <div className="mobile-auth-buttons">
-          <Link to="/signup"><button className="signup-btn">Sign Up</button></Link>
-          <Link to="/login"><button className="login-btn">Login</button></Link>
+          <Link to="/register/signup"><button className="signup-btn">Sign Up</button></Link>
+          <Link to="/register/login"><button className="login-btn">Login</button></Link>
         </div>
       </div>
     </>
