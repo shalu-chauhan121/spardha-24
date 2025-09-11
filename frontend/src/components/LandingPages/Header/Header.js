@@ -6,8 +6,10 @@ function Header() {
 
   return (
     <>
-      <Navbar onHamburgerClick={() => setSidebarOpen(true)} />
+    <div className="header-container">
+      <Navbar onHamburgerClick={() => setSidebarOpen(true)} clasName="navbar"/>
       <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+    </div>
     </>
   );
 }

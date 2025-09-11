@@ -83,7 +83,7 @@ function Signup() {
 
     const baseUrl = process.env.REACT_APP_BASE_URL;
     axios
-      .post(`http://localhost:8000/auth/register/`, {
+      .post(`${baseUrl}/auth/register/`, {
         username: username.value,
         email: email.value,
         password: password1.value,

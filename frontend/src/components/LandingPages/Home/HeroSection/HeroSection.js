@@ -32,6 +32,21 @@ const HeroSection = () => {
 
       {/* CENTER HEADING */}
       <div className="center-heading">
+        {/* <p
+          style={{
+            position: 'absolute',
+            top: '20px',
+            left: '43%',
+            transform: 'translateX(-50%)',
+            fontWeight: 'bold',
+            color: '#fff',
+            textAlign: 'center',
+            fontSize: '20px',
+            zIndex: 2
+          }}
+        >
+          Register Opening Soon
+        </p> */}
         <h1>
           <BlurText
             text="UNLEASH THE CHAMPION"
@@ -65,9 +80,9 @@ const HeroSection = () => {
             ))}
           </div>
 
+         
           <p class="tagline">
-            "Where passion meets performance — Spardha, IIT BHU’s ultimate
-            sports fest."
+            "Where passion meets performance — Spardha"
           </p>
         </div>
 

@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import  { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './CombinedNav.css';
 
@@ -7,7 +7,7 @@ const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About Us', path: '/about' },
   { name: 'Events', path: '/events' },
-  { name: 'E-Spardha', path: '/espardha' },
+  // { name: 'E-Spardha', path: '/espardha' },
   { name: 'Contact Us', path: '/contactus' },
 ];
 
@@ -17,6 +17,7 @@ export const Navbar = ({ onHamburgerClick }) => {
     <div className="top-bar">
       <img src="/images/logo/white_logo_25.png" alt="Spardha Logo" className="logo" />
 
+      <div className="nav-links">
       <nav className="navbar">
         <ul>
           {navLinks.map((link) => (
@@ -34,6 +35,7 @@ export const Navbar = ({ onHamburgerClick }) => {
         <Link to="/register/login">
           <button className="login-btn">Login</button>
         </Link>
+      </div>
       </div>
 
       <div className="hamburger-btn" onClick={onHamburgerClick}>
