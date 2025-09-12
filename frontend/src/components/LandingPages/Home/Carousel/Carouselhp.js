@@ -1,21 +1,21 @@
-import React from 'react';
+import React, {useState, useEffect}from 'react';
 import Img1 from '../Images/basket1.png';
-// import Img2 from '../Images/IMG-20230924-WA0010.jpg';
+import Img2 from '../Images/IMG-20230924-WA0010.jpg';
 import './Carouselhp.css';
 
 function Carousel() {
-  // const [currentSlide, setCurrentSlide] = useState(0);
-  // const images = [Img1, Img2];
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const images = [Img1, Img2];
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
-  //   }, 3000); // Change slide every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
+    }, 3000); // Change slide every 3 seconds
     
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // }, [currentSlide, images.length]);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [currentSlide, images.length]);
 
   return (
     <div className="carousel-home">

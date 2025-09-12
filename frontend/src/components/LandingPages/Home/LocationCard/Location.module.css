@@ -1,0 +1,121 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1E1E1E;
+  color: white;
+  /* border-radius: 20px; */
+  padding: 2rem;
+  min-width: 90vw;
+  /* margin: 1rem auto; */
+
+  flex-wrap: wrap; /* helps on smaller screens */
+}
+
+.left {
+  flex: 1 1 300px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.addressBlock {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  background: #f0c000;
+  border-radius: 10px;
+  padding: 0.5rem;
+  flex-shrink: 0;
+}
+
+.address {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.mapButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: white;
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mapButton:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.arrow {
+  font-size: 1.2rem;
+}
+
+.right {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  border-radius: 16px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 992px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .addressBlock {
+    justify-content: center;
+  }
+
+  .mapButton {
+    margin: 0 auto;
+  }
+  .right{
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.5rem;
+  }
+    .right{
+    display: none;
+  }
+
+  .address {
+    font-size: 0.9rem;
+  }
+
+  .mapButton {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

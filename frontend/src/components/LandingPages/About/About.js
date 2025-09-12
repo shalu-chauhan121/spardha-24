@@ -7,6 +7,7 @@ import Greencounter from '../GreenCounter/Greencounter';
 import Carousel from '../Home/Carousel/Carouselhp';
 import Gallery from '../Gallery/Gallery'
 import Footer from '../Footer/footer';
+// import Header from '../Header/Header';
 const About = () => {
   return (
     <>

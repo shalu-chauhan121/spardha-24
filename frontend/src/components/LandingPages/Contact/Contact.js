@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Contact.css';
-import Carousel from '../Home/Carousel/Carouselhp';
+// import Carousel from '../Home/Carousel/Carouselhp';
 import Card from './Card/Card';
 
 const Contact = () => {
@@ -59,6 +59,12 @@ const Contact = () => {
       <Card name="Piyush Kumar Pakad" email="piyushkr.pakad.cse23@itbhu.ac.in" phone="9351966135"/>
       <Card name="Shweta Singh" email="shweta.singh.cer23@itbhu.ac.in" phone="8439960289"/>
       </>;
+      case 'Technical':
+      return <>
+      <Card name="Rohit Kumar" email="rohit.kumar.che23@itbhu.ac.in" phone="9350126101"/>
+      <Card name="Roshan Mittal" email="roshan.mittal.che23@itbhu.ac.in" phone="9351966135"/>
+      {/* <Card name="Shweta Singh" email="shweta.singh.cer23@itbhu.ac.in" phone="8439960289"/> */}
+      </>;
       default:
         return null;
     }
@@ -66,8 +72,20 @@ const Contact = () => {
 
   return (
     <>
-      <section id='contactus'>
-        <Carousel />
+      <section id='contactus' className='contactus' style={{position: 'relative',
+    overflow: 'hidden',}}>
+       <div
+    style={{
+      position: 'absolute',
+      inset: 0, // top:0, left:0, right:0, bottom:0
+      backgroundImage: 'url(/images/bg/hero-bg1.jpg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      filter: 'blur(8px)',
+      zIndex: -1,
+    }}
+  ></div>
+        {/* <Carousel /> */}
         <div className='container'>
           <div className='heading123'>
             <h2>Contact Us</h2>
@@ -123,6 +141,12 @@ const Contact = () => {
               className={selectedCategory === 'Hospitality' ? 'selected' : ''}
             >
               <h3>Hospitality</h3>
+            </li>
+            <li
+              onClick={() => handleCategoryClick('Technical')}
+              className={selectedCategory === 'Technical' ? 'selected' : ''}
+            >
+              <h3>Technical</h3>
             </li>
           </ul>
 

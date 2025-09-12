@@ -1,26 +1,20 @@
-import React from 'react';
+// import React from 'react';
 import './Home.css';
-import Mid from '../MiddleSection/MiddleSection';
-// import CountdownTimer from '../Countdown/Countdown';
-import Bgimg from '../Images/newbg.jpg';
+import HeroSection from '../HeroSection/HeroSection';
+// import Home_Contact from '../Contact/Contact';
+import About from '../About_section/About';
+import LocationCard from '../LocationCard/LocationCard';
+
 // import Footer from '../Footer/Footer';
 
 function App() {
   return (
-    <>
- <div className="sctn">
-        <div className="bg-home" style={{ backgroundImage: `url(${Bgimg})` }}></div>
-        {/* Main Content Section */}
-        <div className="main-content">
-          <div>
-            
-            <Mid />
-          </div>
-        </div>
+      <div className="sctn">
+        <HeroSection/>
+        <About/>
+        <LocationCard/>
+        {/* <Home_Contact/> */}
       </div>
-      <div>{/*<Footer /> */}</div>
-
-    </>
   );
 }
 
