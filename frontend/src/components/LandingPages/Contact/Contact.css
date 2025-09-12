@@ -1,6 +1,7 @@
 
 body {
   overflow-x: hidden; 
+  background-image: 'url(/images/bg/hero-bg1.jpg)';
 }
 .heading123 {
   color: rgba(73, 130, 246, 1);
@@ -11,13 +12,17 @@ body {
   top: -2.5rem;
 }
 
+
 #contactus {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  /* margin-bottom: 2rem; */
+  /* margin-top: 2rem; */
+  padding-bottom: 3rem;
+  width: 100vw;
+height: fit-content;
 }
 
 .container {

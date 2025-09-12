@@ -248,12 +248,14 @@ class UserUpdateView(generics.GenericAPIView):
                 user.update(name=request.data["name"])
             if "designation" in request.data:
                 user.update(
-                    year=request.data["designation"],
+                    designation=request.data["designation"],
                 )
             if "institution_name" in request.data:
                 user.update(
                     institution_name=request.data["institution_name"],
                 )
+            if "phone_no" in request.data:
+                user.update(phone_no=request.data["phone_no"])
             # UsersSheet.update_user(user.email)
             return Response(
                 {"message": "Updated successfully!"}, status=status.HTTP_200_OK
