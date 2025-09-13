@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { 
-  Outlet,
+  // Outlet,
  useNavigate } from 'react-router';
-import styles from './Register.module.css';
+// import styles from './Register.module.css';
 // import Carousel from '../Home/Carousel/Carouselhp';
 import Footer from '../Footer/footer';
 // import Header from '../Header/Header';
