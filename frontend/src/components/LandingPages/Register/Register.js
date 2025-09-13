@@ -30,12 +30,12 @@ function Register() {
   ></div>
       {/* <Carousel /> */}
       {/* <Header/> */}
-      <div className={`${styles.container}`} id="register">
+      {/* <div className={`${styles.container}`} id="register">
         <div className={`${styles.card}`}>
           <Outlet />
         </div>
-      </div>
-     {/* <div
+      </div> */}
+     <div
         style={{
           width: '100vw',
           height: '70vh',
@@ -49,7 +49,7 @@ function Register() {
         }}
       >
         Opening Soon
-      </div> */}
+      </div>
       <Footer/>
     </div>
   );
