@@ -142,7 +142,7 @@ class RequestPasswordResetEmail(generics.GenericAPIView):
                 )
             uidb64 = urlsafe_base64_encode(smart_bytes(user.id))
             token = PasswordResetTokenGenerator().make_token(user)
-            current_site = get_current_site(request=request).domain
+            # current_site = get_current_site(request=request).domain
             relativeLink = reverse(
                 "password-reset-confirm", kwargs={"uidb64": uidb64, "token": token}
             )
@@ -271,7 +271,7 @@ class UserUpdateView(generics.GenericAPIView):
 def send_verification_mail(user, request):
     uidb64 = urlsafe_base64_encode(smart_bytes(user.id))
     token = PasswordResetTokenGenerator().make_token(user)
-    current_site = get_current_site(request=request).domain
+    # current_site = get_current_site(request=request).domain
     relativeLink = reverse("activate-account", kwargs={"uidb64": uidb64, "token": token})
     absurl = "https://spardha25.onrender.com" + relativeLink
 
