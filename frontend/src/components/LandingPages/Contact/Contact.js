@@ -49,7 +49,7 @@ const Contact = () => {
         <Card name="Md Kaif" email="md.kaif.cer23@itbhu.ac.in" phone="9142994832"/></>;
       case 'Events':
         return <>
-        <Card name="Psasank Eswarvamsy" email="psasank.eswarvamsy.phy23@itbhu.ac.in" phone="9010404545"/>
+        <Card name="Sasank Eswar Vamsy" email="psasank.eswarvamsy.phy23@itbhu.ac.in" phone="9010404545"/>
         <Card name="Grishma Tembhurne" email="grishma.stembhurne.che23@itbhu.ac.in" phone="9322192403"/> 
         <Card name="Pavan Punj Bais" email="pavanpunj.bais.min23@itbhu.ac.in" phone="9329008865"/>
         </>; 
@@ -62,7 +62,7 @@ const Contact = () => {
       case 'Technical':
       return <>
       <Card name="Rohit Kumar" email="rohit.kumar.che23@itbhu.ac.in" phone="9350126101"/>
-      <Card name="Roshan Mittal" email="roshan.mittal.che23@itbhu.ac.in" phone="9351966135"/>
+      <Card name="Roshan Mittal" email="roshan.mittal.che23@itbhu.ac.in" phone="9508287199"/>
       {/* <Card name="Shweta Singh" email="shweta.singh.cer23@itbhu.ac.in" phone="8439960289"/> */}
       </>;
       default:
