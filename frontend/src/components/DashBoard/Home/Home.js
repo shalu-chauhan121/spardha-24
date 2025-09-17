@@ -176,7 +176,6 @@ const Home = () => {
                   < u className='linkButton' style={{ textDecoration: 'none' }}>
                     <Link
                       to="/dashboard/profile"
-                      style={{ textDecoration: 'none' }}
                     ><button className="register">
                         User Profile</button>
                     </Link></u>
