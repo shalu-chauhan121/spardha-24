@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { EventContext } from '../../../../../contexts/EventContext';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Topbar = ({ toggleSidebar }) => {
